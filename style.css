@@ -1,0 +1,162 @@
+@import "https://fonts.googleapis.com/css?family=Indie+Flower|Vast+Shadow|Sunshiney";
+
+.presentacion {
+  width: 450px;
+  margin: 0 auto;
+  background: linear-gradient(-45deg, #0072ff 0%, #FFF 85%);
+  box-shadow: 6px 6px 12px #327eb8;
+  border-radius: 20px;
+}
+
+.centrado {
+  width: 480px;
+  height: 260px;
+  margin: 0 auto;
+  animation: cambiarcolor 60s infinite;
+  box-shadow: inset 0px 0px 40px 20px #fff;
+  text-align: center;
+}
+
+.centrado::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  
+}
+
+.frase {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  padding: 10px 15px;
+  text-align: left;
+  font: 1.3em Indie Flower;
+  color: #fff;
+  font-weight: bold;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+h2 {
+  font: 2em Sunshiney;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  margin: 0px;
+}
+
+h1 {
+  font: 2em Vast Shadow;
+  text-align: center;
+  animation: colortitulo 60s infinite;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font: 1.4em Sunshiney;
+  text-align: justify;
+  padding: 0% 4% 4% 4%;
+  margin-top: 2%;
+}
+
+.autor-frase {
+  width: 100%;
+  height: auto;
+  clear: right;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
+}
+
+span:hover {
+  border-bottom-width: 4px;
+  border-bottom-style: dotted;
+  border-bottom-color: white;
+  /*cursor: pointer;*/
+  transition: all 100ms;
+}
+
+blockquote {
+  quotes: "\0022" "»";
+  padding: 0px;
+  margin: 0px;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.2em;
+}
+
+.barra {
+  width: 480px;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+
+.afrase {
+  font: 1.3em Sunshiney;
+  position: relative;
+  left: 4px;
+  top: 18px;
+  text-decoration: none;
+  color: #000;
+}
+
+.afrase:hover {
+  color: #fff;
+  border-bottom-width: 4px;
+  border-bottom-style: dotted;
+  border-bottom-color: white;
+  transform: translate(-100%, -5%);
+  transition: all 100ms;
+}
+
+.afrase:active {
+  left: 2px;
+  top: 20px;
+}
+
+.contiene-img {
+  margin: 20px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  position: absolute;
+  transition: all 1s ease;
+}
+
+.contiene-img:hover img {
+  transform: translateX(80px);
+}
+
+.texto {
+  display: inline-block;
+  z-index: -1;
+  padding-top: 25px;
+  padding-left: 8px;
+  position: absolute;
+  font: 1.3em Sunshiney;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+.wikipedia {
+  text-decoration: none;
+  color: #fff;
+}
